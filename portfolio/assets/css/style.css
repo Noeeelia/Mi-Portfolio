@@ -1,0 +1,167 @@
+.navbar-brand img {
+    width: 80px;
+    height: auto;
+    margin-left: 40px;
+    margin-right: 20px;
+}
+
+.navbar-nav .nav-link {
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px; 
+    padding: 20px;
+    gap: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.card:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.mi-avatar {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .card-portada {
+    display: inline-flexbox;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.card-portada-texto {
+    margin: 90px 40px;
+    display: inline-block;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+}
+
+.card-portada .card-link {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: #a341b6;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+.card-body {
+    flex: 1;
+    text-align: center;
+}
+
+.card-portada {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card-body .card-link {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: #a341b6;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+.card-body .card-link:hover {
+    background-color: #ff349d;
+}
+
+.icons {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+footer {
+    background-color: #141414;
+    color: antiquewhite;
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    border-top: 1px solid #e7e7e7;
+}
+
+@media (max-width: 992px) {
+    .card {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .mi-avatar {
+        margin-bottom: 5px;
+    }
+
+    .card-portada-texto {
+        margin: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .card-columns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer h6{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-brand img {
+        width: 60px;
+    }
+    
+    .card-img-top {
+        height: 250px;
+    }
+    
+    .card-body .card-link {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+    
+    footer h6 {
+        font-size: 10px;
+    }
+}
+
