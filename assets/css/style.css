@@ -111,6 +111,90 @@ h2 {
     transition: transform 0.3s ease-in-out;
 }
 
+/* Formulario */
+#form {
+    max-width: 600px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  #form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: #444;
+    text-align: left;
+  }
+  
+  input, textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+  }
+  
+  textarea {
+    resize: none;
+    height: 100px;
+  }
+  
+  button {
+    padding: 10px 100px;
+    background: darkorchid;
+    color: antiquewhite;
+    border-radius: 20px;
+    border: none;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  button:hover {
+    background: pink;
+    color: #333;
+  }
+  
+  /* Indicadores de validación */
+  input.error, textarea.error {
+    border: 2px solid red;
+    background-color: #ffe6e6;
+  }
+  
+  input.valid, textarea.valid {
+    border: 2px solid green;
+    background-color: #e6ffe6;
+  }
+  
+  .error {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+    display: block;
+    text-align: left;
+    font-style: italic;
+  }
+  
+  /* Feedback */
+  #form-feedback {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #222;
+    background: rgb(160, 248, 193);
+    border-radius: 10px;
+    padding: 5px;
+    margin: 30px;
+  }
+
 footer {
     background-color: #141414;
     color: antiquewhite;
